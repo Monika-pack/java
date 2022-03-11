@@ -8,8 +8,12 @@
     
     
   <!-- -creating an object or injecting  -->
-  <bean id="stob" class="constructor_injection.Student" scope="prototype"> <!-- creating each with each object -->
-  <constructor-arg value="monika"  type="String"></constructor-arg>  
-    <constructor-arg value="12"  type="int"></constructor-arg> 
+  <bean id="emob" class="Employee_spring.EmployeeInfo" scope="prototype"> <!-- creating each with each object -->
+  <property name="name" value="Raghu"></property>
+ 
+ 
+  <property name="id" value="001"></property>
+   <property name="salary" value="120000"></property>
+   
     </bean>
     </beans>
