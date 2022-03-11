@@ -1,4 +1,4 @@
-package oneTOmany_manyTOone;
+package lapppstudent;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -6,22 +6,20 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+
 public class App {
 
 	public static void main(String[] args) {
 		//Laptop 
 				Laptop lob=new Laptop();
-				lob.setLid(2);
-				lob.setLname("Samsung23");
+				lob.setLid(3);
+				lob.setLname("Samsung1");
 						
 				Student sob=new Student();
-				sob.setRollno(12);
-				sob.setName("Swetha");
+				sob.setRollno(13);
+				sob.setName("Swetha1");
 				sob.setMarks(457);
-				//sob.setLp(lob);
-				sob.getLp().add(lob);
-				lob.setSt(sob);
-				
+				sob.setLp(lob);
 				Configuration con=new Configuration().configure().addAnnotatedClass(Laptop.class).addAnnotatedClass(Student.class);
 				ServiceRegistry reg = new ServiceRegistryBuilder().applySettings(con.getProperties()).buildServiceRegistry();
 				
@@ -32,11 +30,10 @@ public class App {
 				session.save(lob);
 				session.save(sob);
 				tx.commit();
-	}
-}
+			}
 
 		
 
-	
+	}
 
 
