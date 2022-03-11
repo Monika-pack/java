@@ -6,12 +6,14 @@
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.password">root</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/my_sql_database</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/myproject_second_cache_crudeoperations</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="hbm2ddl.auto">create</property> <!-- creating table	 -->
-        <property name="hibernate.show_sql">true</property>
-
-    	<property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property><!-- Table creation -->
+        <property name="show_sql">true</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+   <!--cache for query set below property  -->
+   <property name="hibernate.cache.use_query_cache">true</property>
     </session-factory>
 </hibernate-configuration>
