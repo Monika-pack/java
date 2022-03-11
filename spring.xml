@@ -4,5 +4,14 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
     
-    <bean id="lob" class="spring_lifecycle.springcycle" init-method="init" destroy-method="destroy"></bean>
+    
+    
+    
+  <!-- -creating an object or injecting  -->
+ <bean id = "texteditor" class = "texteditor.TextEditor">
+   <!-- <constructor-arg ref="spellChecker"/> -->
+       <property name = "Spellchecker" ref = "Spellchecker"/></bean>
+  
+   <!-- Definition for spellChecker bean -->
+   <bean id = "spellchk" class = "texteditor.Spellchecker"></bean>
 </beans>
