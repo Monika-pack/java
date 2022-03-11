@@ -4,9 +4,16 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
     
-    
-    
-    
-  <!-- -creating an object or injecting  -->
-  <bean id="stob" class="spring_hellow.Student" scope="prototype"></bean><!-- creating each with each object -->
+    <bean id="in" class="spring_inheritance.HellowIndia" scope="prototype">  <!-- creating each with each object -->
+  <property name="messages 1" value="India is my country"></property>
+   <property name="messages 2" value="India ia an developing country"></property>
+ </bean>
+ <bean id="in" class="spring_inheritance.HellowWorld" parent="HellowIndia">
+  <property name="messages 1" value="world is awesome"></property>
+   <property name="messages 2" value="lotzss of awesome"></property>
+   <property name="messages 3" value="lotzss of peoples"></property>
+    </bean>
+  
     </beans>
+     
+    
