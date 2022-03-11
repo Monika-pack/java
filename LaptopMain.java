@@ -1,4 +1,4 @@
-package hibercycle;
+package hibernatelifecycle;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -54,7 +54,6 @@ MyLaptopClass lob=new MyLaptopClass(); //new State  Transient
 	}
 
 
-
 	}
 
-
+}

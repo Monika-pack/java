@@ -1,8 +1,9 @@
-package hibercycle;
+package hibernatelifecycle;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
+
 public class MyLaptopClass {
 	@Id
 	int lid;
@@ -25,9 +26,8 @@ public class MyLaptopClass {
 	}
 	public void setLprice(float lprice) {
 		this.lprice = lprice;
-	
+	}
+
 
 	}
-	
-
 }
