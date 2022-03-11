@@ -1,20 +1,33 @@
-package spell_checker;
+package texteditor;
 
 public class TextEditor {
-	SpellChecker sp;
-	public TextEditor(SpellChecker sp){ //Job of the spring from XML file
-	   System.out.println("Inside texteditor constructor");
-	    this.sp=sp;   //Injecting
+
+	private Spellchecker spellChecker;
+	   
+	  
+	   public Spellchecker getSpellChecker() {
+		return spellChecker;
 	}
-	public void TextspellCheck(){
-	   sp.spellCheck();
+
+
+	public void setSpellChecker(Spellchecker spellChecker) {
+		this.spellChecker = spellChecker;
 	}
-	
-
-public void callSpellCheck() {
-	
-	
-}
 
 
-}
+	public void spellCheck1() {
+	      spellChecker.checkSpelling();
+	   }
+
+
+	public void spellCheck() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	public void Spellcheck() {
+		// TODO Auto-generated method stub
+		
+	}
+	}
