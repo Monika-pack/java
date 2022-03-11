@@ -1,26 +1,25 @@
-package spring_hellow;
+package spring_inheritance;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
+//import org.springframework.context.support.AbstractApplicationContext;
 public class MainApp {
 
-	private static String s;
+	private static ApplicationContext ctx;
 
 	public static void main(String[] args) {
-		ApplicationContext ctx=new ClassPathXmlApplicationContext("spring.xml");
-		Student s1=(Student) ctx.getBean("stob");
+	ctx = new ClassPathXmlApplicationContext("spring.xml");
 	
-		System.out.println("s="+s);
-		System.out.println("s1="+s1);
-		
-		 //Student s1=(Student) ctx.getBean("s1");
-		   s1.display();
-
-			}
-		
-
-
+	HellowWorld objA =(HellowWorld)  ctx.getBean("in");
+	objA.getMessages1();
+		objA.getMessages2();
+			
+	
+			HellowIndia objB =(HellowIndia)  ctx.getBean("in");
+	objB.getMessages1();
+		objB.getMessages2();
+			objB.getMessages3();
+			
 	}
 
-
+}
