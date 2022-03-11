@@ -8,12 +8,12 @@
     
     
   <!-- -creating an object or injecting  -->
-  <bean id="emob" class="Employee_spring.EmployeeInfo" scope="prototype"> <!-- creating each with each object -->
-  <property name="name" value="Raghu"></property>
- 
- 
-  <property name="id" value="001"></property>
-   <property name="salary" value="120000"></property>
-   
-    </bean>
-    </beans>
+  <bean id="texteditor" class="spell_checker.TextEditor">
+<constructor-arg ref="spellchk"></constructor-arg>
+</bean>
+
+<bean id="spellchk" class="spell_checker.SpellChecker">
+</bean>
+
+  </beans>
+  
