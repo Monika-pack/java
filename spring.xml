@@ -4,15 +4,5 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans  
     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
     
-    
-    
-    
-  <!-- -creating an object or injecting  -->
-  <bean id="stob" class="spring_injection_setget.Student" scope="prototype"> <!-- creating each with each object -->
- <property name="name" value="shalini"></property>
- 
- 
-  <property name="id" value="001"></property>
-   <property name="fees" value="120000"></property>
-    </bean>
-    </beans>
+    <bean id="lob" class="spring_lifecycle.springcycle" init-method="init" destroy-method="destroy"></bean>
+</beans>
