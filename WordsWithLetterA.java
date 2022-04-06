@@ -3,22 +3,23 @@ import java.util.Scanner;
 public class WordsWithLetterA {
 
 	public static void main(String[] args) {
-		 Scanner in = new Scanner(System.in);
-	        System.out.println("Enter a string: ");
-	        String str = in.nextLine();
-	        str = " " + str; 
-	        int c = 0;
-	        int len = str.length();
-	        str = str.toUpperCase();
-	        for (int i = 0; i < len - 1; i++) {
-	            if (str.charAt(i) == ' ' && str.charAt(i + 1) == 'A')
-	                c++;
-	        }
-	        System.out.println("Total number of words starting with letter 'A' = " + c);
-	    }
-	
+		Scanner s = new Scanner(System.in);
+        System.out.println("Enter String: ");
+        String str = s.nextLine();
 
+        for(int i=0;i<str.length()-1;i++)
+        {
+            for(int j=i+1;j<str.length();j++)
 
-	}
+            {
+            if(str.charAt(i)==str.charAt(j))
+            {
 
+                System.out.print(str.charAt(j));
+                
+            }
+            }
+        } 
+    }
 
+}
