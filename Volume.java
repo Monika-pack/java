@@ -5,7 +5,7 @@ public class Volume {
 	public static void main(String[] args) {
 		double vol, H, R, L,B;
 	}
-	    // volume of cube with one arguments//
+	    // volume of cube with one arguments   //
 	    void findVolume(double R) {
 	        System.out.println("Volume of cube = " + (R * R * R));
 	    }
