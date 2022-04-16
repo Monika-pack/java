@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+<title>Javascript Demo</title>
+<script>
+function verify(){
+var num;
+ alert("hello");
+num=Number(document.getElementById("myid").value);
+
+if(num>18){
+   alert("Eligible for vote");
+}
+else{
+    alert("not Eligible for vote");
+}
+}
+</script>
+</head>
+<body>
+Enter name:<input type="number" id="myid"/>
+<input type="button" value="click" onclick="verify()"/>
+</body>
+</html>

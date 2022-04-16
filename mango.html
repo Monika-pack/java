@@ -1,0 +1,21 @@
+<body>
+     <script>
+          var fruit = ['apple','orange','grapes','pomgranate'];
+          document.write("fruit names"+"<br>");
+          var ans;
+          fruit.push('pineapple');
+          fruit.unshift('mango');
+fruit.splice(1,2);
+          for (var i =0; i<fruit.length;i++){
+               ans = document.write(fruit[i]+"<br/>");
+              }
+              
+              document.write("after deleting the item"+"<br>");
+              fruit.pop();
+              fruit.shift();
+              for (var i =0; i<fruit.length;i++){
+               ans = document.write(fruit[i]+"<br/>");
+              }
+          
+     </script>
+</body>
