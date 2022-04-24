@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+<title>MyFirst Angular</title>
+<script src="angular.min.js"></script>
+</head>
+<html>
+<body ng-app>
+<p>{{2+3}}</p>  
+</body>
+</html> 
